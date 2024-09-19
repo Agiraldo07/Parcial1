@@ -47,47 +47,54 @@ nav ul li a {
 .grid-container {
     display: flex;
     justify-content: center;
-    padding: 40px;
+    flex-wrap: wrap; /* Asegura que los elementos se ajusten a la pantalla */
 }
 
 .card {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
+    background-color: rgba(204, 64, 134, 0.801);
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
-    max-width: 800px;
-    width: 100%;
+    max-width: 1200px; /* Aumenta el ancho máximo */
+    width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
+    max-height: 1000px; /* Aumenta la altura máxima */
+    height: auto; /* Ajusta la altura automáticamente para adaptarse al contenido */
     position: relative;
+    margin: 20px; /* Espacio entre las tarjetas */
+    background-color: rgba(174, 92, 185, 0.5);
+    border-bottom: 7px solid rgb(194, 15, 149);
+}
+
 }
 
 .card-content {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column; /* Ajuste para alinear los elementos verticalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    height: 200%; /* Asegura que el contenido ocupa toda la altura de la tarjeta */
+    color: white;
+    font-size: 1.2em;
+    
 }
 
 .card-content p {
     margin: 0;
-    color: white;
-    font-size: 1.2em;
 }
 
-.card-img {
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
-}
-
+/* Ajustes para el título */
 .card-title {
-    position: absolute;
-    top: -15px;
-    right: 20px;
-    background-color: #ff66ff;
     color: orange;
     padding: 5px 10px;
-    border-radius: 5px;
     font-size: 1.2em;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-align: right;
+}
+
+/* Ajustes para la imagen */
+.card-img {
+    float: left;
+    bottom: -20px; /* Espacio desde el borde inferior */
+    left: 20px; /* Espacio desde el borde izquierdo */
+    width: 50px;
+    height: 50px;
 }
 
 footer {
