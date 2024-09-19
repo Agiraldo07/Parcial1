@@ -16,8 +16,7 @@ header {
 
 header h1 {
     font-size: 2.5em;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    color: lightgray;
+    text-shadow: -9px -9px 30px rgba(253, 253, 253, 0.8);
 }
 
 header h2 {
@@ -30,7 +29,7 @@ nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     background-color: #333399;
     margin: 0;
 }
@@ -48,44 +47,51 @@ nav ul li a {
 .grid-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Asegura que los elementos se ajusten a la pantalla */
 }
 
 .card {
-    background-color: rgba(136, 13, 13, 0.5);
+    background-color: rgba(204, 64, 134, 0.801);
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
-    max-width: 800px;
-    width: 100%;
+    max-width: 1200px; /* Aumenta el ancho máximo */
+    width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
+    height: auto; /* Ajusta la altura automáticamente para adaptarse al contenido */
     position: relative;
+    margin: 20px; /* Espacio entre las tarjetas */
+    background-color: rgba(21, 151, 145, 0.5);
+    border-bottom: 7px solid rgb(19, 101, 196);
+    box-shadow: -9px -9px 10px rgba(253, 253, 253, 1);
 }
 
 .card-content {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: right;
+    flex-direction: column; /* Alinear los elementos verticalmente */
+    justify-content: center; /* Centrar el contenido */
+    padding: 20px; /* Añade espacio dentro de la tarjeta */
+    color: white;
+    font-size: 1.2em;
+    height: auto; /* Asegura que el contenido se ajuste a la altura del texto */
 }
 
 .card-content p {
     margin: 0;
-    color: white;
-    font-size: 1.2em;
 }
 
-.card-img {
-    float: left;
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
-    
-}
-
+/* Ajustes para el título */
 .card-title {
     color: orange;
     padding: 5px 10px;
     font-size: 1.2em;
     text-align: right;
-    float: right;
+}
+
+/* Ajustes para la imagen */
+.card-img {
+    float: left;
+    margin-bottom: 20px;
+    width: 50px;
+    height: 50px;
 }
 
 footer {
