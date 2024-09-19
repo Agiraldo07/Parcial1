@@ -1,0 +1,128 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    background-image: url('pexels-kovyrina-937980.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+header h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: lightgray;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333399;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Estilos para el grid en forma de rombo */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    grid-template-rows: repeat(3, 200px); /* Tres filas */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.grid-container .card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Posicionando las tarjetas en forma de rombo */
+.grid-container .html {
+    grid-column: 2 / 3; /* Colocar en la columna 2 */
+    grid-row: 1 / 2;    /* Primera fila */
+}
+
+.grid-container .tcpip {
+    grid-column: 1 / 2; /* Colocar en la columna 1 */
+    grid-row: 2 / 3;    /* Segunda fila */
+}
+
+.grid-container .dns {
+    grid-column: 3 / 4; /* Colocar en la columna 3 */
+    grid-row: 2 / 3;    /* Segunda fila */
+}
+
+.grid-container .css {
+    grid-column: 2 / 3; /* Colocar en la columna 2 */
+    grid-row: 3 / 4;    /* Tercera fila */
+}
+
+.card h3 {
+    color: orange;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.card.html h3 {
+    color: #ff66ff;
+}
+
+.card.tcpip h3 {
+    color: #ff6666;
+}
+
+.card.dns h3 {
+    color: #ff3300;
+}
+
+.card.css h3 {
+    color: #00cc99;
+}
+
+.card-img {
+    width: 40px; /* Tamaño pequeño de la imagen */
+    height: 40px;
+    margin-top: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 40px;
+}
