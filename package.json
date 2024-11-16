@@ -1,0 +1,26 @@
+{
+    "name": "hospital-api",
+    "version": "1.0.0",
+    "description": "API for managing hospital appointments using Node.js, Express, and PostgreSQL",
+    "main": "src/app.js",
+    "scripts": {
+      "start": "node src/app.js",
+      "dev": "nodemon src/app.js"
+    },
+    "dependencies": {
+      "dotenv": "^16.1.1",
+      "express": "^4.18.4",
+      "jsonwebtoken": "^9.0.0",
+      "pg": "^8.11.1",
+      "sequelize": "^6.34.0"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.22"
+    },
+    "engines": {
+      "node": ">=14.0.0"
+    },
+    "author": "Anderson Giraldo",
+    "license": "MIT"
+  }
+  
